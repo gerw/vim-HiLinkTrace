@@ -1,0 +1,48 @@
+*hilinks.txt*	Highlighting Links				Feb 23, 2009
+
+Author:  Charles E. Campbell, Jr.  <NdrOchip@ScampbellPfamily.AbizM>
+	  (remove NOSPAM from Campbell's email first)
+Copyright: (c) 2008 by Charles E. Campbell, Jr.	*hilinks-copyright*
+           The VIM LICENSE applies to hilinks.vim, and hilinks.txt
+           (see |copyright|) except use "hilinks" instead of "Vim"
+	   NO WARRANTY, EXPRESS OR IMPLIED.  USE AT-YOUR-OWN-RISK.
+
+==============================================================================
+1. Contents					*hilinks* *hilinks-contents*
+     1. Contents : ............................. |hilinks|
+     2. Manual   : ............................. |hilinks-manual|
+     3. History  : ............................. |hilinks-history|
+
+==============================================================================
+2. Manual					*hilinks-manual*
+
+MAPS						*hlt*
+	\hlt  : reveals a linked list of highlighting from the top-level down
+	        to the bottom level for the cursor position.  For vim 7.1
+	        with patch 215, will also reveal the syntax stack at the cursor
+	        position.
+
+COMMANDS					*:HLT* *:HLT!* *:HLTm*
+	:HLT  : same as \hlt, but in a command format.
+	:HLT! : same as \hlt, but will execute on every CursorMoved event,
+	        so one can see the highlighting trace and syntax stack as
+		one moves the cursor.  The next :HLT! will toggle this mode
+		off.
+	:HLTm : same as :HLT! (provided so AsNeeded can trigger off it)
+	
+	NOTE: Vim 7.1 with patch#215 required for the syntax stack.
+
+==============================================================================
+3. History					*hilinks-history*
+
+   v4   Jan 10, 2008	* :HLT and :HLT! implemented
+        Feb 29, 2008	* shows foreground and background definitions
+	May 20, 2008	* (bugfix) wasn't working when patch#215 was missing
+	Feb 23, 2009	* (bugfix) the map was missing the new argument
+			* :HLTm implemented (so AsNeeded can use :HLTm)
+
+==============================================================================
+Modelines: {{{1
+vim:tw=78:ts=8:ft=help:fdm=marker:
+
+

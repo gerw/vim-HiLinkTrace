@@ -1,0 +1,10 @@
+:HLT	hilinks.txt	/*:HLT*
+:HLT!	hilinks.txt	/*:HLT!*
+:HLTm	hilinks.txt	/*:HLTm*
+hilinks	hilinks.txt	/*hilinks*
+hilinks-contents	hilinks.txt	/*hilinks-contents*
+hilinks-copyright	hilinks.txt	/*hilinks-copyright*
+hilinks-history	hilinks.txt	/*hilinks-history*
+hilinks-manual	hilinks.txt	/*hilinks-manual*
+hilinks.txt	hilinks.txt	/*hilinks.txt*
+hlt	hilinks.txt	/*hlt*
